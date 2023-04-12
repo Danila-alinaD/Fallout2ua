@@ -118,6 +118,12 @@ h1{
 			align-items: center;
 			padding: 10px;
 		}
+		.button {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 10px;
+		}
 		
 		.options {
 			margin-bottom: 20px;
@@ -132,6 +138,10 @@ h1{
 		}
 		.block img {
 			width: 100%;
+			height: auto;
+		}
+		.button img {
+			width: 15%;
 			height: auto;
 		}
 		.Text {
