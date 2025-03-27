@@ -1,123 +1,131 @@
 <!doctype html>
 <html lang="uk">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/font-awesome.css" type="text/css">
-	<link rel="stylesheet" href="css/style.css" type="text/css">
-	<link rel="stylesheet" href="css/media.css" type="text/css">
-	<link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
-	<title>Fallout 2 UA</title>
-	<style>
-    table, th, td {
-      border: 1px solid white;
-      width: 350px;
-    }
-    @media (min-width: 768px) {
-    table, th, td {
-      border: 1px solid white;
-      width: 500px;
-    }
-    }
-    .progress-container {
-        width: 100%;
-        max-width: 400px;
-        background-color: #e0e0e0;
-        border-radius: 20px;
-        overflow: hidden;
-        height: 25px;
-        position: relative;
-    }
-    .progress-bar {
-        height: 100%;
-        background-color: #4caf50;
-        width: 80%;
-        transition: width 1s ease-in-out;
-        position: relative;
-        animation: pulse 3.5s infinite ease-in-out;
-    }
-    .progress-text {
-        position: absolute;
-        width: 100%;
-        text-align: center;
-        top: 50%;
-        transform: translateY(-50%);
-        font-weight: bold;
-        color: #333;
-    }
-    @keyframes pulse {
-        0% { transform: scaleX(1); }
-        50% { transform: scaleX(1.05); }
-        100% { transform: scaleX(1); }
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/font-awesome.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/media.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    <title>Fallout 2 UA</title>
+    <style>
+        table, th, td {
+            border: 1px solid white;
+            width: 350px;
+        }
+        @media (min-width: 768px) {
+            table, th, td {
+                border: 1px solid white;
+                width: 500px;
+            }
+        }
+        .progress-container {
+            width: 100%;
+            max-width: 400px;
+            background-color: #e0e0e0;
+            border-radius: 20px;
+            overflow: hidden;
+            height: 25px;
+            position: relative;
+            margin: 20px auto;
+        }
+        .progress-bar {
+            height: 100%;
+            background-color: #4caf50;
+            width: 80%;
+            transition: width 1s ease-in-out;
+            position: relative;
+            animation: pulse 3.5s infinite ease-in-out;
+        }
+        .progress-text {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+            font-weight: bold;
+            color: #333;
+        }
+        @keyframes pulse {
+            0% { transform: scaleX(1); }
+            50% { transform: scaleX(1.05); }
+            100% { transform: scaleX(1); }
+        }
     </style>
 </head>
 <body>
 <div class="wrapper">
-<header class="header">
-	<div class="block">
-		<img align="center" src="images/fallout2_.png">
-	</div>
-	<nav class="dws-menu">
-		<input type="checkbox" name="toggle" id="menu" class="toggleMenu">
-		<label for="menu" class="toggleMenu"><i class="fa fa-bars"></i>Меню</label>
-		<ul>
-			<li><a href="index.html"><i class="fa fa-home"></i>Головна</a></li>
-			<li>
-				<input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m1">
-				<a href="#"><i class="fa fa-bolt"></i>Fallout 2 UA</a>
-				<label for="sub_m1" class="toggleSubmenu"><i class="fa"></i></label>
-				<ul>
-					<li><a href="#">Локалізація</a></li>
-					<li><a href="tools.html">Все для Fallout 2</a></li>
-					<li><a href="support.html">Підтримати</a></li>
-				</ul>
-			</li>
-			<li><a href="https://linktr.ee/danil_linad"><i class="fa fa-cubes"></i>Інші проєкти</a></li>
-			<li><a href="#"><i class="fa fa-th-list"></i>Новини</a></li>
-			<li><a href="contacts.html"><i class="fa fa-envelope-open"></i>Зв'язок</a></li>
-		</ul>
-	</nav>
-	<div class="block">
-		<img align="center" src="images/setup.png">
-	</div>
-	<div class="content">
-		<p>Версія: 0.05a, тестова (13.11.24)<br>
-		Перекладено: Арройо, Кламат, Сховище 15 та його околиці, Наварро, Лігво, НКР, Сан-Франциско, Анклав, Рандомні зустрічі, та Військова База</p>
-	</div>
-	<div class="content">
-		<p>Якщо ви знайшли помилку в перекладі, баги або ще щось, відправляйте скріншоти у <a style="color: #B0F6E2" href="https://twitter.com/fallout_2_ua">Твітер</a>
-		або в Discord (посилання в розділі <a style="color: #B0F6E2" href="contacts.html">"Зв'язок"</a>).</p>
-	</div>
-	<div class="content">
-		<h1>ДЛЯ WINDOWS</h1>
-	</div>
-	<div class="content">
-		<p>Завантажте <strong>master.dat</strong> та <strong>f2_res.dat</strong>, скопіюйте їх у кореневу папку Fallout 2.</p>
-	</div>
-	<div class="block">
-		<img align="center" src="images/screen_s.png">
-	</div>
-	<div class="button">
-		<a class="block" href="https://drive.google.com/drive/folders/1wfE4Ka_J-HYtoEYsiamAk_H4F_wpB-sp?usp=sharing">
-			<img align="center" src="download_button.png">
-		</a>
-	</div>
-	<div class="content">
-		<h1>ДЛЯ PS VITA</h1>
-	</div>
-	<div class="content">
-		<p>Переклад також працює для PS Vita! Завантажте <strong>master.dat</strong> і перемістіть у <code>ux0:data/fallout2/</code>.</p>
-	</div>
-	<div class="button">
-		<a class="block" href="https://drive.google.com/drive/folders/1wfE4Ka_J-HYtoEYsiamAk_H4F_wpB-sp?usp=sharing">
-			<img align="center" src="download_button.png">
-		</a>
-	</div>
-	<div class="content">
-		<p>Автор: Danil_linaD</p>
-	</div>
-</header>
+    <header class="header">
+        <div class="block">
+            <img align="center" src="images/fallout2_.png">
+        </div>
+        <nav class="dws-menu">
+            <input type="checkbox" name="toggle" id="menu" class="toggleMenu">
+            <label for="menu" class="toggleMenu"><i class="fa fa-bars"></i>Меню</label>
+            <ul>
+                <li><a href="index.html"><i class="fa fa-home"></i>Головна</a></li>
+                <li>
+                    <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m1">
+                    <a href="#"><i class="fa fa-bolt"></i>Fallout 2 UA</a>
+                    <label for="sub_m1" class="toggleSubmenu"><i class="fa"></i></label>
+                    <ul>
+                        <li><a href="#">Локалізація</a></li>
+                        <li><a href="tools.html">Все для Fallout 2</a></li>
+                        <li><a href="support.html">Підтримати</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://linktr.ee/danil_linad"><i class="fa fa-cubes"></i>Інші проєкти</a></li>
+                <li><a href="#"><i class="fa fa-th-list"></i>Новини</a></li>
+                <li><a href="contacts.html"><i class="fa fa-envelope-open"></i>Зв'язок</a></li>
+            </ul>
+        </nav>
+        <div class="block">
+            <img align="center" src="images/setup.png">
+        </div>
+        <div class="content">
+            <p>Версія: 0.05a, тестова (13.11.24)<br>
+                Перекладено: Арройо, Кламат, Сховище 15 та його околиці, Наварро, Лігво, НКР, Сан-Франциско, Анклав, Рандомні зустрічі, та Військова База</p>
+        </div>
+        
+        <!-- Статус-бар -->
+        <div class="progress-container">
+            <div class="progress-bar"></div>
+            <div class="progress-text">88%</div>
+        </div>
+        
+        <div class="content">
+            <p>Якщо ви знайшли помилку в перекладі, баги або ще щось, відправляйте скріншоти у <a style="color: #B0F6E2" href="https://twitter.com/fallout_2_ua">Твітер</a>
+                або в Discord (посилання в розділі <a style="color: #B0F6E2" href="contacts.html">"Зв'язок"</a>).</p>
+        </div>
+        <div class="content">
+            <h1>ДЛЯ WINDOWS</h1>
+        </div>
+        <div class="content">
+            <p>Завантажте <strong>master.dat</strong> та <strong>f2_res.dat</strong>, скопіюйте їх у кореневу папку Fallout 2.</p>
+        </div>
+        <div class="block">
+            <img align="center" src="images/screen_s.png">
+        </div>
+        <div class="button">
+            <a class="block" href="https://drive.google.com/drive/folders/1wfE4Ka_J-HYtoEYsiamAk_H4F_wpB-sp?usp=sharing">
+                <img align="center" src="download_button.png">
+            </a>
+        </div>
+        <div class="content">
+            <h1>ДЛЯ PS VITA</h1>
+        </div>
+        <div class="content">
+            <p>Переклад також працює для PS Vita! Завантажте <strong>master.dat</strong> і перемістіть у <code>ux0:data/fallout2/</code>.</p>
+        </div>
+        <div class="button">
+            <a class="block" href="https://drive.google.com/drive/folders/1wfE4Ka_J-HYtoEYsiamAk_H4F_wpB-sp?usp=sharing">
+                <img align="center" src="download_button.png">
+            </a>
+        </div>
+        <div class="content">
+            <p>Автор: Danil_linaD</p>
+        </div>
+    </header>
 </div>
 </body>
 </html>
